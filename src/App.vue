@@ -1,26 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <nav class="navbar bg-dark">
+    <span class="navbar-brand text-light "><i class="fas fa-shopping-bag ms-4 me-3"></i> CHECK IT OUT!</span>
+  </nav>
+    <form id="search">
+        <label for="searchTerm">Search</label>
+        <input type="text" id="searchTerm">
+        <div id="results"></div>
+    </form>
+  <div class="container-fluid mt-3">
+    <library-item-list></library-item-list>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LibraryItemList from "@/components/LibraryItemList.vue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    LibraryItemList,
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
