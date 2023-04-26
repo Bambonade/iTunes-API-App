@@ -14,10 +14,11 @@
 
 import MovieDetails from "@/components/MovieDetails.vue";
 import BookDetails from "./BookDetails.vue";
+import SongDetails from "@/components/SongDetails.vue";
 
 export default {
   name: "LibraryItemCard",
-  components: {BookDetails, MovieDetails},
+  components: {BookDetails, MovieDetails, SongDetails},
   props: {
     item: {type: Object}
   },
